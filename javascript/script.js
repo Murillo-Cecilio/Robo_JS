@@ -1,2 +1,6 @@
-document.querySelector('p.estatistica-titulo').innerText= "Power"
-alert('Hello World')
+const robotron = document.querySelector('#robotron')
+robotron.addEventListener('click', dizOi) //add
+
+function dizOi() {
+    console.log('oi')
+}
