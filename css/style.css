@@ -223,6 +223,10 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
     body {
         font-size: 13px;
     }
@@ -231,5 +235,16 @@ main {
         width: 96vw;
         height: 80vh;
         margin: 10vh auto;
+    }
+}
+
+@media screen and (max-width:690px) {
+    *{
+        width:100%;
+    }
+
+    .robo {
+        height: 400px;
+        width: 100px;
     }
 }
