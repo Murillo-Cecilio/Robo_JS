@@ -240,11 +240,40 @@ main {
 
 @media screen and (max-width:690px) {
     *{
-        width:100%;
+        box-sizing: none;
+    }
+    .robo {
+        display:none;
     }
 
-    .robo {
-        height: 400px;
-        width: 100px;
+    body {
+        background: url('../img/robotron.png');
+        background-position:80vh 50px;
+        background-color: rgba(0, 38, 255, 0.575);
+    }
+
+    .robotron {
+        background: none;
+        display: none;
+    }
+
+    .box {
+        border-left: none;
+        background: none;
+
+    }
+    #box-ajuste {
+        padding:3rem;
+    }
+
+    .estatistica-numero{
+        
+    }
+    .estatistica-valor::after {
+        display: none;
+    }
+    .estatistica-titulo {
+        color: rgba(255, 255, 0, 0.685);
+        font-size: 20pt;
     }
 }
