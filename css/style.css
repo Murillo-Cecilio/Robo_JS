@@ -267,7 +267,9 @@ main {
     }
 
     .estatistica-numero{
-        color: red;
+        color: rgb(33, 255, 99);
+        text-decoration: underline;
+        font-weight: bolder;
     }
     .estatistica-valor::after {
         display: none;
