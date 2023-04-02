@@ -267,7 +267,7 @@ main {
     }
 
     .estatistica-numero{
-        
+        color: red;
     }
     .estatistica-valor::after {
         display: none;
