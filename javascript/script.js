@@ -1,11 +1,13 @@
 const subtrair = document.querySelector('#subtrair')
 const somar = document.querySelector('#somar')
 const braço = document.querySelector('#braço')
-
+//erro na linha 5 foi justamente por não usar SelectorAll para utilizar array tem que ter multiplos comandos dentro dele
 const controle = document.querySelectorAll('.controle-ajuste')
-
-controle.forEach( (elemento) => {
-    console.log(elemento)
+//linha 7 array formado para somar e subtrair todos os status
+controle.forEach((elemento) => {
+    elemento.addEventListener('click', (evento) => {
+        manipulaDados(evento.target.textContent)
+    })
 });
 
 
@@ -22,12 +24,12 @@ controle.forEach( (elemento) => {
 // }
 
 
-somar.addEventListener('click', () => { manipulaDados('somar') })//deixando o código reaproveitado para demais comandos da página
+// somar.addEventListener('click', () => { manipulaDados('somar') })//deixando o código reaproveitado para demais comandos da página
 
-subtrair.addEventListener('click', () => { manipulaDados('subtrair') })
+// subtrair.addEventListener('click', () => { manipulaDados('subtrair') })
 
 function manipulaDados(operação) {
-    if (operação === "subtrair") {
+    if (operação === "-") {
         braço.value = parseInt(braço.value) - 1
     } else {
         braço.value = parseInt(braço.value) + 1
