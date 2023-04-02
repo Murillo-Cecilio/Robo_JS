@@ -2,7 +2,12 @@ const subtrair = document.querySelector('#subtrair')
 const somar = document.querySelector('#somar')
 const braço = document.querySelector('#braço')
 
-const controle = document.querySelector('.controle-ajuste')
+const controle = document.querySelectorAll('.controle-ajuste')
+
+controle.forEach( (elemento) => {
+    console.log(elemento)
+});
+
 
 // const robotron = document.querySelector('#robotron')
 
